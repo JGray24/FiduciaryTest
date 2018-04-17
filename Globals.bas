@@ -2,7 +2,7 @@ Attribute VB_Name = "Globals"
 Option Compare Database
 Option Explicit
 
-' Access global variables definition..............
+' Access global variables definition...
 Global GBL_file_name  As Double
 
 Public Sub Init_Globals()
