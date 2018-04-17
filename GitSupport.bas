@@ -100,11 +100,13 @@ End Sub
 Public Sub ExportSourceFiles(destPath As String)
  
 Dim component As VBComponent
+Dim KillFileAndPath  As String
 For Each component In Application.VBE.ActiveVBProject.VBComponents
-
-If component.Type = vbext_ct_ClassModule Or component.Type = vbext_ct_StdModule Then
+  If component.Type = vbext_ct_ClassModule Or component.Type = vbext_ct_StdModule Then
+    KillFileAndPath = destPath & component.Name & ToFileExtension(component.Type)
+    '''Call Kill(KillFileAndPath)
     component.Export destPath & component.Name & ToFileExtension(component.Type)
-End If
+  End If
 Next
  
 End Sub

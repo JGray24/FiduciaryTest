@@ -1,4 +1,4 @@
-Attribute VB_Name = "JohnsUtilityRoutines1"
+Attribute VB_Name = "JohnsUtilityRoutines"
 Option Compare Database
 Option Explicit
 
